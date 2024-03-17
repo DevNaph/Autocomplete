@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form2</title>
+</head>
+<body>
+    <form>
+        <input autofocus autocomplete="off" id="name" type="text" />
+        <input type="submit" />
+    </form>
+
+    <script>
+        
+        document.querySelector("form").addEventListener("submit", function(event){
+            alert("Hello, " + document.querySelector("#name").value);
+            event.preventDefault();
+        })
+        
+    </script>
+</body>
+</html>

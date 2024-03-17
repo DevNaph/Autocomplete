@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+</head>
+<body>
+    <!--
+        Regular expressions in HTML:
+            Period (.): represents any single character except line terminators e.g backslash
+            Asterisk(*): represents a character appearing zero or more times
+            Plus (+): represents a character appearing one or more times
+            Question mark (?): represents a character appearing zero or one time
+            Curly braces ({n}): represents a character appearing in (n) occurrences
+            Curly braces ({n,m}): atleast n occurrences, at most m occurrences
+            Characters in square brackets ([012345]): any one of the enclosed characters
+            Characters in square brackets ([0-9]): any one of the range of characters
+            \d: any digit
+            \D: any character that is not a digit
+    -->
+    <form>
+        <input autofocus autocomplete="no" name="email" type="email" pattern=".+@.+\.edu" />
+        <button>register</button>
+    </form>
+</body>
+</html>
